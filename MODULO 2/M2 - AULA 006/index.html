@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favidev.png" type="image/x-icon">
+    <title>Pseudo-Classe & Elemento CSS</title>
+
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /*Pseudo-class*/
+        a{
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+        a:visited{
+            color: darkred;
+
+        }
+        a:hover{
+            text-decoration: underline;
+            color: darkcyan;
+            font-size: 15px;
+        }
+        /*Pseudo-Elemento*/
+        .especial:hover{
+            color: rgb(255, 255, 255);
+            background-color: brown;
+            text-decoration: none;
+        }
+        .especial::before{
+            content: '»';
+            font-weight: lighter;
+
+        }
+        .especial::after{
+            content: '«';
+            font-weight: lighter;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            background-color: chartreuse;
+            width: 230px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando Um Link</h1>
+    
+    <p>Para aprender JavaScript & NodeJS, Acesse  o <a href="#">GitHub do Epifânio</a></p>
+    
+    <p>Se quiser conhecer mais sobre os padrões, visite o site do <a href="#">Escritorio do W3C no Brasil</a></p>
+    
+    <p>Para acompanhar os novos codigos acesse o <a href="#" class="especial"> Canal do EpiCoders</a></p>
+
+    <!--Outro exemplo usando pseudo-classe-->
+    <h2>Conteudo Especial</h2>
+    <div>
+        Passe o Mouse Aqui
+        <p>Epifânio Valente No Code!</p>
+    </div>
+    <p>&UpArrow; Veja o Conteudo Oculto aparecendo. &UpArrow;</p>
+
+
+
+</body>
+</html>

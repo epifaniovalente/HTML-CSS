@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favidev.png" type="image/x-icon">
+    <title>Box Model</title>
+
+    <style>
+        h1{
+            background-color: lightgrey;
+            width: 300px;
+            height: 300px;
+            border-width: 8px;
+            border-color: darkgreen;
+            border-style: solid;
+            border-radius: 5px;
+
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            /*padding: 5px 5px 5px 5px;*/
+
+            margin: 20px auto 40px auto;
+
+            outline-width: 15;
+            outline-style: dashed;
+            outline-color: chocolate;
+        }
+        p > a {
+            border-width: 6px;
+            border-color: red;
+            border-style: inset; /* Pode ser: groove, dashad, dotted, double, solid, */
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de caixas Box-level- com css e outros componentes semanticos do html5 escreve tanto apenas para melhor observação do box-model,</h1>
+    <p>Paragrafos tambéjm são exemplos de box-level, mas os <a href="#">Links são exemplos de caixas inline-level</a> Vamos ver como tudo isso funciona</p>
+</body>
+</html>

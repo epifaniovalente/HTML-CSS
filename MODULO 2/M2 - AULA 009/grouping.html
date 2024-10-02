@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras Nas Caixas</title>
+    <style>
+        body{
+            background-color: rgba(51, 89, 160, 0.671);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        h1{
+            box-shadow: 1px 1px 6px 2px rgba(255, 255, 255, 0.466);
+            border-radius: 8px;
+        }
+        header{
+            background-color: black;
+            color: rgb(255, 255, 255);
+            margin: 8px;
+            padding: 8px;
+            border-radius: 8px;
+        }
+        nav{
+            background-color: lightslategray;
+            padding: 3px;
+            margin: 8px;
+            border-radius: 8px;
+            box-shadow: -2px 2px 6px white; /**Sombradacaixa*/
+        }
+        nav > a{
+            text-decoration: none;
+            font-weight: lighter;
+            color: rgb(255, 255, 255);
+            margin-right: 25px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        main{
+            background-color: white;
+            margin: 8px;
+            padding: 8px;
+            border-radius: 8px;
+
+        }
+        #anatomia{
+            background-color: lightslategray;
+            margin: 8px;
+            padding: 2px;
+            border-radius: 8px;
+
+        }
+        #html{
+            background-color: lightslategrey;
+            margin: 8px;
+            padding: 2px;
+            border-radius: 8px;
+        }
+        aside {
+            background-color: rgb(37, 47, 56);
+            text-align: right;
+            padding: 1px;
+            margin: 0px;
+            border-radius: 8px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 2px;
+        }
+        footer > p {
+        margin: 0px;
+        text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Futsal Angola</h1>
+        <nav>
+            <a href="#">Gira Bairro</a>
+            <a href="#">Amigavel</a>
+            <a href="#">InterProvincial</a>
+            <a href="#">Campeonatos</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section id="anatomia">
+                <h2>Anatominha de caixas</h2>
+                <p>Vamos analisar como uma caixa vai ser apresentada por
+                    todos os navegadores. Olhe atentamente o diagrama a
+                    seguir, que é exatamente o já citado modelo de caixa:</p>
+            </section>
+        </article>
+        <section>
+            <article id="html">
+                <h2>Grouping Tags</h2>
+                <p>HTML padrão tinha apenas duas tags de agrupamento genérico: a <div>
+                    e a <span>. A diferença básica entre elas é que a primeira é um elemento agrupador
+                    do tipo block-level e o segundo é inline-level. No mais, eles agem exatamente da
+                    mesma maneira, servindo para juntar vários outros elementos HTML.</p>
+                <aside>Escritos pela Curso Em Video</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        
+        <p>Desenvolvido pelo YouTube</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            background-color: darkslategray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0px;
+        }
+        header{
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 10px;
+        }
+        nav{
+            background-color: lightslategrey;
+        }
+
+        nav > a {
+            text-decoration: none;
+            font-weight: bold;
+            padding: 3px;
+            color: white;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            font-size: 15px;
+        }
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+
+        }
+        article{
+            background-color: darkgray;
+            padding: 5px;
+            text-align: justify;
+
+        }
+        article > aside {
+            background-color: rgba(47, 79, 79, 0.377);
+            text-align: right;
+
+        }
+        footer{
+            background-color: rgb(000, 000, 000);
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header><!--Cabeçalho, ou seja, conteudo da cabeça(head)-->
+        <h1>Meu Site</h1>
+        <nav> <!-- Navegação, ou seja, para escrever um menu no cabeçalho-->
+            <a href="#"> Programação </a>
+            <a href="#">Internet</a>
+            <a href="#">Software</a>
+            <a href="#">Cyber Segurança </a>
+            <a href="#">Hardware</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Noticias de Angola</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maiores corrupti, esse delectus fugit odit? Ipsa earum placeat, inventore deleniti, veniam, pariatur quia maiores necessitatibus ut deserunt perferendis distinctio omnis.</p>
+                <aside>Artigo escrito pelo Carindi</aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido Pela EpiCoders</p>
+    </footer>
+</body>
+</html>
